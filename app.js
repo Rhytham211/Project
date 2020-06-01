@@ -11,7 +11,7 @@ const app = express()
 app.set('view engine','ejs')
 
 app.use(cookieSession({
-    maxAge: 240*60*60*1000,
+    maxAge: 24*60*60*1000,
     keys:[keys.session.cookieKey]   //encrypt cookie
 }))
 
